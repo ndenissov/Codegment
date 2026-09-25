@@ -6,7 +6,9 @@ A lightweight, modern desktop code editor featuring syntax highlighting, multi-f
 [![PyPI Total Downloads](https://img.shields.io/pepy/dt/codegment?label=total%20downloads)](https://pepy.tech/project/codegment)
 [![PyPI Monthly Downloads](https://img.shields.io/pypi/dm/codegment)](https://pypi.org/project/codegment/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/codegment)](https://pypi.org/project/codegment/)
-[![License](https://img.shields.io/github/license/ndenissov/Codegment)](https://github.com/ndenissov/Codegment/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/ndenissov/codegments)](https://github.com/ndenissov/codegments/blob/main/LICENSE)
+
+![Codegment Screenshot](image.png)
 
 ---
 
@@ -45,9 +47,25 @@ poetry add codegment
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/ndenissov/Codegment.git
-cd Codegment
+git clone https://github.com/ndenissov/codegments.git
+cd codegments
 poetry install
+```
+
+### On NixOS
+
+A [`shell.nix`](shell.nix) configuration is provided with all necessary graphic and system libraries (OpenGL, SDL2, Tkinter, X11) preconfigured for Kivy:
+
+```bash
+# Using nix-shell:
+nix-shell
+poetry install
+poetry run codegment
+
+# Or using direnv:
+direnv allow
+poetry install
+poetry run codegment
 ```
 
 ## Quick Start
@@ -96,4 +114,4 @@ Nikita Denissov ([@ndenissov](https://github.com/ndenissov))
 
 ## License
 
-This project is licensed under the GNU Lesser General Public License v2.1 or later. See the [LICENSE](https://github.com/ndenissov/Codegment/blob/main/LICENSE) file for details.
+This project is licensed under the GNU Lesser General Public License v2.1 or later. See the [LICENSE](https://github.com/ndenissov/codegments/blob/main/LICENSE) file for details.

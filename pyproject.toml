@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "codegment"
-version = "1.0.0"
+version = "1.0.1"
 description = "A code editor with syntax highlighting and auto-completion built with Kivy and Pygments"
 authors = ["Nikita Denissov <n.denissov@proton.me>"]
 readme = "README.md"
 license = "LGPL-2.1-or-later"
-repository = "https://github.com/ndenissov/Codegment"
-homepage = "https://github.com/ndenissov/Codegment"
+repository = "https://github.com/ndenissov/codegments"
+homepage = "https://github.com/ndenissov/codegments"
 keywords = ["code-editor", "kivy", "kivymd", "pygments", "syntax-highlighting"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
